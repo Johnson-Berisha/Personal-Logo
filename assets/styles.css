@@ -5,3 +5,29 @@ body {
     height: 100vh;
     background-color: #114dff;
 }
+
+path {
+    animation-name: s1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+@keyframes s1 {
+    0% {
+        stroke-dasharray: 110px;
+    }
+    25% {
+        stroke-dasharray: 25px;
+    }
+    50%{
+        stroke-dasharray: 150px;
+    }
+    75% {
+        stroke-dasharray: 75px;
+    }
+
+
+    100% {
+        stroke-dasharray: 200px;
+    }
+}
